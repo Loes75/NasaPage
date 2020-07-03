@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.img-fluid {
+  max-width: 80%;
+}
+
+.hide {
+  display: none;
+}
+
+.bg-nav {
+  background-color: rgba(255, 242, 242, 0.685);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #1b1b1b;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+.homeSection {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 3, 3, 0.5)), to(rgba(19, 16, 202, 0.5))), url(../img/space.jpg);
+  background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(19, 16, 202, 0.5)), url(../img/space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.homeSection #intro {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.homeSection #intro #arrow {
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+.homeSection #intro #arrow svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: moveArrow 2s infinite ease-in-out;
+          animation: moveArrow 2s infinite ease-in-out;
+}
+
+.homeSection h1 {
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 1.5px;
+  font-size: 4.5vmax;
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+.homeSection p {
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 1.5px;
+}
+
+.aboutSection {
+  min-height: 100vh;
+  background-color: black;
+}
+
+.card {
+  background-color: rgba(255, 242, 242, 0.685);
+  color: black;
+  font-weight: bold;
+}
+
+.card .card-body .card-title {
+  font-family: "Montserrat Subrayada";
+}
+
+.card-img-top {
+  max-width: 300px;
+}
+
+.btn-primary {
+  background-color: rgba(19, 16, 202, 0.5);
+  color: white;
+  border-color: transparent;
+}
+
+.btn-primary:hover {
+  background-color: rgba(3, 3, 3, 0.5);
+  color: white;
+  border-color: transparent;
+}
+
+.imageSection {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(42, 21, 134, 0.4))), url(../img/stars.jpg);
+  background: linear-gradient(black, rgba(42, 21, 134, 0.4)), url(../img/stars.jpg);
+  min-height: 70vh;
+  margin: 0 0;
+}
+
+.search {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.search h1 {
+  letter-spacing: 1.5px;
+}
+
+.search p {
+  font-size: 1.3rem;
+}
+
+.form-group {
+  margin: auto;
+}
+
+.form-group label {
+  color: white;
+}
+
+.form-group input {
+  font-size: 1.3rem;
+}
+
+.form-control {
+  color: #380264 !important;
+}
+
+.form-control:focus {
+  border-color: #a757e9;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(160, 97, 212, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(160, 97, 212, 0.5);
+}
+
+.img-container h2 {
+  color: white;
+}
+
+@-webkit-keyframes moveArrow {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

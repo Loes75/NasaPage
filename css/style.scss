@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Poppins&display=swap');
+
+//font-family: 'Montserrat Subrayada', sans-serif;
+//font-family: 'Poppins', sans-serif;
+
+//Variables
+$font-family : 'Montserrat Subrayada';
+$font-family2 : 'Poppins';
+$text-lighter: rgb(255, 255, 255);
+$text-darker: rgb(27, 27, 27);
+
+//Base
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: $font-family2 , sans-serif;
+}
+
+.img-fluid{
+    max-width: 80%;
+}
+.hide{
+    display: none;
+}
+
+
+//NavBar
+
+.bg-nav{
+    background-color: rgba(255, 242, 242, 0.685);
+}
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.3rem;
+    color: $text-lighter;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $text-darker;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+//Home
+
+.homeSection{
+    background: linear-gradient(rgba(3, 3, 3, 0.5),rgba(19, 16, 202, 0.5)), url(../img/space.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    
+    #intro{
+        flex: 1;
+        #arrow{
+            height:100px ;
+            position: relative;
+            cursor: pointer;
+            svg{
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                animation: moveArrow 2s infinite ease-in-out;
+                
+            }
+        }
+    }
+    h1{
+        color: rgba($color: $text-lighter, $alpha: 0.9);
+        letter-spacing: 1.5px;
+        font-size: 4.5vmax;
+        font-family: $font-family , sans-serif;
+    }
+    p{
+        color: rgba($color: $text-lighter, $alpha: 0.9);
+        letter-spacing: 1.5px;
+    }
+}
+
+
+//AboutSection
+
+.aboutSection{
+    min-height: 100vh;
+    background-color: black; 
+}
+
+.card{
+    //background: linear-gradient(rgba(102, 101, 101, 0.4), rgba(0, 0, 0, 0.4)), url(../img/stars.jpg);
+    background-color: rgba(255, 242, 242, 0.685);
+    color: black;
+    font-weight: bold;
+    .card-body{
+        .card-title{
+            font-family: $font-family;
+        }
+    }
+}
+.card-img-top{
+    max-width: 300px;
+}
+
+.btn-primary{
+    background-color: rgba(19, 16, 202, 0.5);
+    color: $text-lighter;
+    border-color: transparent;
+    &:hover{
+        background-color: rgba(3, 3, 3, 0.5);
+        color: $text-lighter;
+        border-color: transparent;
+    }
+}
+
+
+
+
+//ImageSection
+
+.imageSection{
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(42, 21, 134, 0.4)), url(../img/stars.jpg);
+    min-height: 70vh;
+    margin: 0 0;
+}
+.search{
+    color: rgba($color: $text-lighter, $alpha: 0.9);
+    h1{
+        letter-spacing: 1.5px;    
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
+.form-group{
+    margin: auto;
+    label{
+        color: $text-lighter;
+    }
+    input{
+        font-size: 1.3rem;
+    }
+}
+.form-control{
+    color: rgb(56, 2, 100) !important;
+    &:focus{
+        border-color: rgb(167, 87, 233);
+        box-shadow: 0 0 0 0.2rem rgba(160, 97, 212, 0.5);
+
+    }
+}
+
+.img-container{
+    h2{
+        color: $text-lighter;
+    }
+}
+
+//Animation
+
+
+
+@-webkit-keyframes moveArrow{
+    0%, 100%{
+        top: 0;
+    }
+    50%{
+        top: 50%;
+    }
+}
