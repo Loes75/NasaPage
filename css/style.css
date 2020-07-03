@@ -107,8 +107,8 @@ body {
 }
 
 .imageSection {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(42, 21, 134, 0.4))), url(../img/stars.jpg);
-  background: linear-gradient(black, rgba(42, 21, 134, 0.4)), url(../img/stars.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(42, 21, 134, 0.5))), url(../img/stars.jpg);
+  background: linear-gradient(black, rgba(42, 21, 134, 0.5)), url(../img/stars.jpg);
   min-height: 70vh;
   margin: 0 0;
   overflow-x: hidden;
@@ -144,8 +144,8 @@ body {
 
 .form-control:focus {
   border-color: #a757e9;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(160, 97, 212, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(160, 97, 212, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem #a757e9;
+          box-shadow: 0 0 0 0.2rem #a757e9;
 }
 
 .img-container h2 {
