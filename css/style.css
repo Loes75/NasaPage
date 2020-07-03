@@ -111,6 +111,7 @@ body {
   background: linear-gradient(black, rgba(42, 21, 134, 0.4)), url(../img/stars.jpg);
   min-height: 70vh;
   margin: 0 0;
+  overflow-x: hidden;
 }
 
 .search {
