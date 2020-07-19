@@ -22,5 +22,10 @@ Page that allows you to view the astronomical image or video of the day using a 
 
 * Moment.js
 
+## Remember
+
+* You need an Api KEY from
+[NASA](https://api.nasa.gov/)
+
 
 
